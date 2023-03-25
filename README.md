@@ -51,7 +51,19 @@ sudo yum install -y apache-maven
 ```
 sudo yum install java-1.8.0-devel
 
-java -v
+java -version
+```
+
+```
+sudo /usr/sbin/alternatives --config java #choose the number with java 8
+```
+
+```
+sudo /usr/sbin/alternatives --config javac #choose the number with java 8
+```
+
+```
+sudo yum install git
 ```
 
 ## Launch Webserver
@@ -60,8 +72,8 @@ java -v
 git clone https://github.com/hpp222/dd1-demo.git
 ```
 
-in dd1-demo dir:
 ```
+cd dd1-demo
 mvn clean package -Dmaven.test.skip=true
 cd target
 ```
