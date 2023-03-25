@@ -61,6 +61,9 @@ sudo /usr/sbin/alternatives --config java #choose the number with java 8
 ```
 sudo /usr/sbin/alternatives --config javac #choose the number with java 8
 ```
+```
+java -version
+```
 
 ```
 sudo yum install git
@@ -75,10 +78,10 @@ git clone https://github.com/hpp222/dd1-demo.git
 ```
 cd dd1-demo
 mvn clean package -Dmaven.test.skip=true
-cd target
 ```
 
 ```
+cd target
 java -jar ShoppingCart-0.0.1-SNAPSHOT.jar --server.port=8080 --spring.datasource.username=xxx --spring.datasource.password=xxx --spring.datasource.url=jdbc:mysql://dbendpoint:3306/sample?useSSL=false
 ```
 
